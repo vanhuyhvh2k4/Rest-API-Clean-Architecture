@@ -1,11 +1,10 @@
 ﻿
+using Rest_API_Clean_Architecture.Domain.Entities;
+
 namespace Rest_API_Clean_Architecture.Application.Services.Authentication
 {
     public record AuthenticationResult(
-        Guid Id,
-        string FirstName,
-        string LastName,
-        string Email,
+        User User,
         string Token
     );
 }
